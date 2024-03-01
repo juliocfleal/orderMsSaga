@@ -99,22 +99,22 @@ public class KafkaConfig {
 
     @Bean
     public NewTopic createPaymentSuccessTopic(){
-        return buildTopics(PAYMENT_VALIDATION_SUCCESS.getTopic());
+        return buildTopics(PAYMENT_SUCCESS.getTopic());
     }
 
     @Bean
     public NewTopic createPaymentFailTopic(){
-        return buildTopics(PAYMENT_VALIDATION_FAIL.getTopic());
+        return buildTopics(PAYMENT_SUCCESS.getTopic());
     }
 
     @Bean
     public NewTopic createInventorySuccessTopic(){
-        return buildTopics(INVENTORY_VALIDATION_SUCCESS.getTopic());
+        return buildTopics(INVENTORY_SUCCESS.getTopic());
     }
 
     @Bean
     public NewTopic createInventoryFailTopic(){
-        return buildTopics(INVENTORY_VALIDATION_FAIL.getTopic());
+        return buildTopics(INVENTORY_FAIL.getTopic());
     }
 
     @Bean
